@@ -1,6 +1,6 @@
 # React-Portfolio made with love and with beautiful UI.
 
-Live Preview at : 
+Live Preview at : SOON!
 
 ### Hi there 👋 I am San, a FrontEnd Web developer. I love to build new things that excites me a lot.
 
