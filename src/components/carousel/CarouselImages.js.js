@@ -7,7 +7,7 @@ import { GoProject } from 'react-icons/go'
 import { FaArrowCircleDown } from 'react-icons/fa'
 import Hello from '../images/Hello.jpg'
 import Pencil from '../images/Pencil.jpg'
-import laptop1 from '../images/laptop1.jpg'
+// import laptop1 from '../images/laptop1.jpg'
 
 class CarouselImages extends Component {
     render() {
@@ -19,7 +19,7 @@ class CarouselImages extends Component {
                         <img className={classes.image} src={Hello} alt="myImage" />
                         <div className={classes.h1}>
                             <h1 >I'm Thesantoso</h1>
-                            <a href="https://drive.google.com/file/d/1XwQYRl06QtuNPT8v4fHkbajk1ll9LTbi/view?usp=sharing" rel="opener noreferrer" target="_blank">VIEW CV<FaArrowCircleDown /></a>
+                            <a href="https://drive.google.com/file/d/1m2CJZFxO4mSUzxa_EKVfX2gXn_epUhiy/view?usp=sharing" rel="opener noreferrer" target="_blank">VIEW CV<FaArrowCircleDown /></a>
                         </div>
                     </div>
                     <div className={classes.image_container}>

@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import classes from './Experience.module.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
-import { MdSchool } from 'react-icons/md';
 import { FaTools } from 'react-icons/fa';
-import { MdWork } from 'react-icons/md';
 import { FiFigma } from 'react-icons/fi';
 import { SiReact } from 'react-icons/si';
-import { FaSchool } from 'react-icons/fa';
+
 
 class Experience extends Component {
     render() {
@@ -27,7 +25,7 @@ class Experience extends Component {
                                                 </div>
                                                 <div className={classes.label}>
                                                     <h2 >Bootcamp React & React Native FrontEnd Developer <span>Feb(2022)-Present</span></h2>
-                                                    <p>I am currently Bootcamp as <b>FrontEnd React Developer</b> at <a target="_blank" href="https://www.hacktiv8.com/"><b>Hacktiv8</b></a> I'm Managing data in the Front End sphere using Redux includes implementing the Next.JS framework concept for server-side needs.</p>
+                                                    <p>I am currently Bootcamp as <b>FrontEnd React Developer</b> at <a target="_blank" rel="opener noreferrer" href="https://www.hacktiv8.com/"><b>Hacktiv8</b></a> I'm Managing data in the Front End sphere using Redux includes implementing the Next.JS framework concept for server-side needs.</p>
                                                 </div>
                                             </article>
                                         </ScrollAnimation>
@@ -61,7 +59,7 @@ class Experience extends Component {
                                                 </div>
                                                 <div className={classes.label}>
                                                      <h2 >IT Support Engineer <span>Aug(2021)-Dec(2021)</span></h2>
-                                                    <p>I've also been freelance for 5 months at <b>PT. Asuransi Jiwa Generali Indonesia</b><a href='https://www.aia-financial.co.id/'></a> I'm Troubleshooting problematic computer systems or network components</p>
+                                                    <p>I've also been freelance for 5 months at <b>PT. Asuransi Jiwa Generali Indonesia</b><a href='https://www.aia-financial.co.id/'rel="opener noreferrer"></a> I'm Troubleshooting problematic computer systems or network components</p>
                                                 </div>
                                                 <div className={classes.timeline_entry_inner}><div className={classes.timeline_icon_3 || classes.color_none}></div></div>
                                             </article>

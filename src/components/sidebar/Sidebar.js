@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Sidebar.css';
 import { HashLink as Link } from 'react-router-hash-link';
-import { FiExternalLink } from 'react-icons/fi';
 import logo from '../images/sam.jpg'
 
 class Sidebar extends Component {
@@ -14,7 +13,7 @@ class Sidebar extends Component {
                 <div style={{ color: 'black', fontWeight: 'bold' }} className=""> # coding </div> */}
                 <h1><Link smooth to="/#start" className="h1_links">Rizky San</Link></h1>
 
-                <img src={logo} />
+                <img alt="logo1" src={logo} />
                 <p style={{ color: 'black', fontWeight: 'bold' }} className="gmail"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJftvBffjPmxWxvfHWRHWnhTbpQgPxBxvkcnPpFpFqbhrXMCHXSJTsCXCVLsQzgRcVLpnPL" rel="opener noreferrer" target="_blank" className="fa fa-envelope"></a> Rsantoso.me@gmail.com </p>
 
                 <ul className="sidebar-nav">
@@ -30,14 +29,22 @@ class Sidebar extends Component {
                 </ul>
 
                 <div className="flip-card-back">
-                    <ul className="sidebar-nav">
-                        <li className="sidebar-nav-icons"> <a href="https://github.com/thesantoso" rel="opener noreferrer" target="_blank" className="fa fas fa-github fa-lg"></a></li>
-                        <li className="sidebar-nav-icons"><a href="https://www.linkedin.com/in/thesantoso/" rel="opener noreferrer" target="_blank" className="fa fas fa-linkedin fa-lg"></a></li>
-                        <li className="sidebar-nav-icons"> <a href="https://twitter.com/rizzsann" rel="opener noreferrer" target="_blank" className="fa fas fa-twitter fa-lg"></a></li>
-                        <li className="sidebar-nav-icons"> <a href="https://www.instagram.com/rizzkyds/" rel="opener noreferrer" target="_blank" className="fa fas fa-instagram fa-lg"></a></li>
-                        <li className="sidebar-nav-icons"> <a href="mailto:rsantoso.me@gmail.com" rel="opener noreferrer" target="_blank" className="fa fas fa-envelope fa-lg"></a></li>
+                    {/* <ul className="sidebar-nav"> */}
+                        <div className="sidebar-nav-icons"> 
+                            <div className="icons-sidebar">
+                                 <a href="https://github.com/thesantoso" rel="opener noreferrer" target="_blank" className="fa fas fa-github fa-lg" />
+                            
+                                <a href="https://www.linkedin.com/in/thesantoso/" rel="opener noreferrer" target="_blank" className="fa fas fa-linkedin fa-lg" />
+
+                                <a href="https://twitter.com/rizzsann" rel="opener noreferrer" target="_blank" className="fa fas fa-twitter fa-lg" />
+
+                                <a href="https://www.instagram.com/rizzkyds/" rel="opener noreferrer" target="_blank" className="fa fas fa-instagram fa-lg" />
+
+                                <a href="mailto:rsantoso.me@gmail.com" rel="opener noreferrer" target="_blank" className="fa fas fa-envelope fa-lg" />
+                            </div>
+                        </div>
                         {/* <li className="sidebar-nav-icons"> <a href="https://www.facebook.com/profile.php?id=100011989067867" rel="opener noreferrer" target="_blank" className="fa fas fa-facebook fa-lg"></a></li> */}
-                    </ul>
+                    {/* </ul> */}
                 </div>
 
             </div>

@@ -3,6 +3,17 @@ import classes from './About.module.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 
+const ColoredLine = ({ color }) => (
+    <hr
+        style={{
+            color: color,
+            backgroundColor: color,
+            height: 3,
+            marginLeft: 40,
+            // marginRight: 20 
+        }}
+    />
+);
 class About extends Component {
     render() {
         return (
@@ -17,6 +28,7 @@ class About extends Component {
                         </p>
                     </div>
                 </ScrollAnimation>
+                <ColoredLine color="yellow" />
             </div>
         )
     }

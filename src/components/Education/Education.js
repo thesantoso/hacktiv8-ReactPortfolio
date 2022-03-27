@@ -14,12 +14,8 @@ import "animate.css/animate.min.css";
 // import { HotelIcon } from '@mui/icons-material';
 // import { RepeatIcon } from '@mui/icons-material';
 // import { Typography } from '@mui/material';
-// // import { MdSchool } from 'react-icons/md';
-// // import { MdWork } from 'react-icons/md';
-// // import { FaSchool } from 'react-icons/fa';
-// // import * as React from 'react';
 // import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import { Timeline } from '@material-ui/lab';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
@@ -32,14 +28,25 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import SchoolIcon from '@mui/icons-material/School';
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    padding: '10px 16px',
-  },
-  secondaryTail: {
-    backgroundColor: theme.palette.secondary.main,
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   paper: {
+//     padding: '10px 16px',
+//   },
+//   secondaryTail: {
+//     backgroundColor: theme.palette.secondary.main,
+//   },
+// }));
+
+const ColoredLine = ({ color }) => (
+    <hr
+        style={{
+            color: color,
+            backgroundColor: color,
+            height: 3,
+            marginLeft: 25
+        }}
+    />
+);
 
 // export default function CustomizedTimeline() {
   // const classes = useStyles();
@@ -48,6 +55,8 @@ const useStyles = makeStyles((theme) => ({
   return (
     <div className={classes.box} id="education">
         <ScrollAnimation offset={0} animateIn="fadeInLeft" duration={5.4} animateOnce={true} initiallyVisible={true}>
+      <ColoredLine color="green" /><br>
+      </br>
       <h1 className={classes.heading}>My Education</h1><br></br>
       <div className={classes.Education}>
     <Timeline align="alternate">
@@ -95,7 +104,9 @@ const useStyles = makeStyles((theme) => ({
       </TimelineItem>
     </Timeline>
     </div>
-    </ScrollAnimation>
+    </ScrollAnimation><br>
+    </br>
+    {/* <ColoredLine color="blue" /> */}
     </div>
   );
   }}

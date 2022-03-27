@@ -34,9 +34,9 @@ class App extends Component {
             <About />
             <Experience />
             <Education />
-            {/* <Skills />
+            <Skills/>
+            <Awards />
             <Interest />
-            <Awards/> */}
           </div>
         </div>
       </Router>
