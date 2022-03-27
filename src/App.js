@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Sidebar from './components/sidebar/Sidebar';
-import Home from './components/home/Home';
 import About from './components/about/About';
+import Experience from './components/experience/Experience';
 import Education from './components/Education/Education';
-import Interest from './components/skills/Interest'
+import Skills from './components/skills/Skills';
+import Interest from './components/interest/Interest'
+import Awards from './components/awards/Awards';
 import CarouselImages from './components/carousel/CarouselImages.js'
 
 
@@ -27,13 +29,14 @@ class App extends Component {
           </div>
           <div className="main">
             <div>
-
               <CarouselImages />
             </div>
-            <Home />
             <About />
-            <Interest />
+            <Experience />
             <Education />
+            {/* <Skills />
+            <Interest />
+            <Awards/> */}
           </div>
         </div>
       </Router>
