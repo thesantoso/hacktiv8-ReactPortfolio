@@ -1,39 +1,55 @@
-import React, { Component } from 'react'
-import classes from './Interest.module.css';
-import ScrollAnimation from 'react-animate-on-scroll';
-import "animate.css/animate.min.css";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
+import { red } from '@material-ui/core/colors';
+import ListItemText from '@mui/material/ListItemText';
 
-class Interest extends Component {
-  render() {
-    return (
-      <div className={classes.box} id="interest">
-        <ScrollAnimation offset={0} animateIn="fadeInLeft" duration={2.4} animateOnce={true} initiallyVisible={true}>
-          <span className={classes.head}>WHAT I DO?</span>
-          <h2 className={classes.heading}>HERE ARE SOME OF MY EXPERTISE</h2>
-          <div className={classes.Interest}>
-            <ScrollAnimation offset={0} animateIn="fadeInLeft" duration={2.4} animateOnce={true} initiallyVisible={true}>
-              <div className={classes.web}>
-                <h3>APP Develpoment</h3>
-                <p>I also have knowledge of flutter development and have experience in building android and IOS applications. I also have live app published on Google Play Store. </p>
-              </div>
-            </ScrollAnimation>
-            <ScrollAnimation offset={0} animateIn="fadeInLeft" duration={2.4} animateOnce={true} initiallyVisible={true}>
-              <div className={classes.app}>
-                <h3>Web Develpoment</h3>
-                <p>I am a full stack web developer(MERN) and build websites using HTML, CSS, Javascript, ReactJs.<br /> I have also good grasp on Node and NoSQL(MongoDb)</p>
-              </div>
-            </ScrollAnimation>
-            <ScrollAnimation offset={0} animateIn="fadeInLeft" duration={2.4} animateOnce={true} initiallyVisible={true}>
-              <div className={classes.other}>
-                <h3>Other's Interest</h3>
-                <p>I also have decent hand in developing website with WordPress.<br />C++, Github are my other fields of interest. Currently, I am investing my free time in Web3.js </p>
-              </div>
-            </ScrollAnimation>
-          </div>
-        </ScrollAnimation>
-      </div>
-    )
-  }
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    maxWidth: 345,
+  },
+  media: {
+    height: 0,
+    paddingTop: '56.25%', // 16:9
+    // marginRight: 200,
+  },
+  expand: {
+    transform: 'rotate(0deg)',
+    marginLeft: 100,
+    transition: theme.transitions.create('transform', {
+      duration: theme.transitions.duration.shortest,
+    }),
+  },
+  expandOpen: {
+    transform: 'rotate(180deg)',
+  },
+  avatar: {
+    backgroundColor: red[500],
+  },
+}));
+
+export default function RecipeReviewCard() {
+  const classes = useStyles();
+  // const [expanded, setExpanded] = React.useState(false);
+
+  // const handleExpandClick = () => {
+  //   setExpanded(!expanded);
+  // };
+
+  return (
+    <Card className={classes.root}>
+      <CardMedia
+        className={classes.media}
+        image="/static/images/cards/paella.jpg"
+        title="Paella dish"
+      />
+      <CardContent>
+        <ListItemText primary="NGODING" secondary="Javascript, Vue.js, React" align="center" />
+      </CardContent>
+    </Card>
+  );
 }
-
-export default Interest;

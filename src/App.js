@@ -35,8 +35,8 @@ class App extends Component {
             <Experience />
             <Education />
             <Skills/>
-            <Awards />
             <Interest />
+            <Awards />
           </div>
         </div>
       </Router>

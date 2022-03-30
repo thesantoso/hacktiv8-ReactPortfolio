@@ -43,7 +43,7 @@ const ColoredLine = ({ color }) => (
             color: color,
             backgroundColor: color,
             height: 3,
-            marginLeft: 25
+            marginLeft: 40,
         }}
     />
 );
